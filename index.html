@@ -32,7 +32,7 @@
               </p>
             </div>
             <div class="card__buy shadow-i-1">
-              <button type="button" name="button" class="btn-buy">BUY</button>
+              <a class="btn-buy">BUY</a>
             </div>
           </div>
         </div>
@@ -112,33 +112,38 @@
     spaceBetween: 30,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
+    onSlideNextStart: onSlideNextStart(),
     breakpoints: {
       1024: {
         slidesPerView: 3,
         spaceBetween: 30,
         nextButton: null,
-    nextButton: null,
+        nextButton: null,
       },
       768: {
         slidesPerView:1,
         spaceBetween: 30,
         nextButton: null,
-    nextButton: null,
+        nextButton: null,
       },
       640: {
         slidesPerView: 1,
         spaceBetween: 20,
         nextButton: null,
-    nextButton: null,
+        nextButton: null,
       },
       320: {
         slidesPerView: 1,
         spaceBetween: 10,
         nextButton: null,
-    nextButton: null,
+        nextButton: null,
       }
     }
   });
+
+  function onSlideNextStart() {
+    console.log("ok")
+  };
   </script>
 </body>
 </html>
